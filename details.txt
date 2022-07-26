@@ -1,0 +1,41 @@
+An employee is not allowed to access a store until he has logged in.
+When the employee logins in with the valid credentials, it will direct him to a particular store.
+Figure 4.1 illustrates the Login page operation.
+
+
+Register page operation
+If an employee is not registered for a store, he has to register first and then only he can login.
+Figure 4.2 illustrates the Register page operation.
+
+Purchase Stock operation
+When a customer arrives at a particular store, inorder to purchase the items, the stock details have to be entered.
+Figure 4.3 illustrates the Purchase Items operation.
+
+Update Stocks operation
+An employee must be logged in to update the stock details. The changes can be made accordingly which will be saved in the database for further operations.
+Figure 4.3 illustrates the Update Stocks operation.
+
+Delete Stocks operation
+An employee must be logged in to delete the a particular stock. The changes can be made accordingly which will be saved in the database.
+Figure 4.3 illustrates the Delete Stocks operation.
+
+
+Employee Table
+
+The Employee table contains the attributes E_id, Ename, Eaddress, Ephone, Esalary and Epass. Here, the attribute E_id is the primary key. 
+Figure 4.3 illustrates the structure of Employee table.
+
+Customer Table
+
+The Customer table contains the attributes C_id, Cname, Caddress, Cphone. Here, the attribute C_id is the primary key. 
+Figure 4.3 illustrates the structure of Customer table.
+
+Stock Table
+
+The Stock table contains the attributes St_id, Stname, Stamount, Stbarcode, Sh_id, M_id. Here, the attribute St_id is the primary key and Sh_id and M_id are the foreign keys. 
+Figure 4.3 illustrates the structure of Stock table.
+
+Shop Table
+
+The Shop table contains the attributes Sh_id, Shname, Shphone, Shaddress, C_id, E_id. Here, the attribute Sh_id is the primary key and C_id and E_id are the foreign keys. 
+Figure 4.3 illustrates the structure of Shop table.

@@ -1,0 +1,24 @@
+{% extends 'layout1.html' %}
+{% block body %} 
+<h1 class="heading" style="color:#232d60;text-align: center;font-size: 4rem;">STOCKS</h1>
+<div class="tablecreate" id="blur">
+  <table class="table create">
+<thead>
+<tr>
+    <tr>
+      <th scope="col">Stock ID</th>
+      <th scope="col">Stname</th>
+      <th scope="col">Stamount</th>
+      <th scope="col">Stbarcode</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in query %}
+    <tr>
+      <th scope="row">{{post.St_id}}</th>
+      <td>{{post.Stname}}</td>
+      <td>{{post.Stamount}}</td>
+      <td>{{post.Stbarcode}}</td>
+    </tr>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    margin: 4rem;
+    background-image: url(../images/back.png);
+    background-position: cover;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+  }
+  
+  .tablecreate {
+    position: relative;
+    top: 6rem;
+    max-width: 90rem;
+    border: 0.1rem solid #0051ff;
+    background-color: #efefef33;
+    padding: 1.5rem;
+    overflow: auto;
+    margin: auto;
+    border-radius: 0.4rem;
+  }
+  
+  table {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+  }
+  
+  table > thead {
+    background-color: #83a8f7;
+    color: #fff;
+  }
+  table > thead th {
+    padding: 1.5rem;
+  }
+  
+  table th,
+  table td {
+    border: 0.1rem solid #c4c2c2f1;
+    padding: 1rem 1.5rem;
+  }
+  
+  table > tbody > tr {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  
+  table > tbody > tr:nth-child(even) {
+    background-color: rgb(238, 238, 238);
+  }
+  
+  table > tbody > tr:hover {
+    filter: drop-shadow(0rem 0.2rem 0.6rem #0002);
+  }
+  

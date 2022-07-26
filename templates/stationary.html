@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+{% block body %} 
+<h1 class="stname">Stationary Store</h1>
+            <form id="register" action="/stationary" method="POST"></form>
+            <div class="container1">
+                <h2>SHOP ITEMS</h2>
+            <label for="show" class="close-btn fa fa-times" onclick="toggle()"></label>
+             <div class="container">
+                    <label>Stock ID</label>
+                    <input
+                      type="text"
+                      name="St_id"
+                      id="St_id"
+                      placeholder="Enter the shop ID" required
+                    />
+                  </div>
+                  <div class="container">
+                    <label>Stock Name</label>
+                    <input
+                      type="text"
+                      name="Stname"
+                      id="Stname"
+                      placeholder="Enter the stock name" required
+                    />
+                  </div>
+                  <div class="container">
+                    <label>Stock Amount</label>
+                    <input
+                      type="text"
+                      name="Stamount"
+                      id="Stamount"
+                      placeholder="Enter the stock amount" required
+                    />
+                  </div>
+                  <div class="container">
+                    <label>Shop ID</label>
+                    <input
+                      type="text"
+                      name="Sh_id"
+                      id="Sh_id"
+                      placeholder="Enter the shop ID" required
+                    />
+                  </div>
+                  <div class="container">
+                    <label>Customer ID</label>
+                    <input
+                      type="text"
+                      name="C_id"
+                      id="C_id"
+                      placeholder="Enter the customer ID" required
+                    />
+                  </div>
+                  
+                  <div class="container">
+                    <input type="submit" name="submit" value="Submit" id="submit" />
+                  </div>
+                </form>
+            </div>
+         </div>
+{% endblock %}

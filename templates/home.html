@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.2" />
+    <title> </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/home.css" />
+  </head>
+  <body>
+    <!-- homepage -->
+
+    <section class="container" id="home">
+      <div class="navbar">
+        <!-- <h4>MallQuest</h4> -->
+        <!-- <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#category">CATEGORY</a></li>
+            <li><a href="/orders">ORDERS</a></li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Tables</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <li class="dropdown"><a href="/employee">Employee</a></li>
+                  <li class="dropdown"><a href="/shop">Shops</a></li>
+                  <li class="dropdown"><a href="/stock">Stocks</a></li>
+                  <li class="dropdown"><a href="/manufacturer">Manufacturers</a></li>
+                  <li class="dropdown"><a href="/branch">Branches</a></li>
+              </div>
+            </div>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </nav> -->
+        <div class="navbar">
+          <a href="#home">HOME</a>
+          <a href="#category">CATEGORY</a>
+          <a href="/orders">ORDERS</a>
+          <a href="/triggers"
+            ><label for="" class="show-triggers">STOCK LOGS</label></a
+          >
+          <div class="dropdown">
+            <button class="dropbtn">
+              MORE INFO
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/employee">Employee</a>
+              <a href="/customer">Customers</a>
+              <a href="/shop">Shops</a>
+              <a href="/stock">Stocks</a>
+              <a href="/manufacturer">Manufacturers</a>
+              <a href="/branch">Branches</a>
+            </div>
+          </div>
+        </div>
+        <button class="logout"><a href="/logout">Logout</a></button>
+      </div>
+    </section>
+    <img src="static/images/homeicon.png" class="homeimg" />
+    <h1 class="catheader" id="category">Categories</h1>
+
+    <!-- categorypage -->
+    <section class="categories">
+      <div class="grid">
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/art.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Stationary Store</p>
+              <br />
+              <p class="con1">
+                Make your writings extra special.Come and grab you favourite
+                items now!!
+              </p>
+              <button class="visitbtn">
+                <a href="/stationary">Visit</a><span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/med.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Med Plus</p>
+              <br />
+              <p class="con1">
+                A pharmacy for all of your needs.<br />Live healthily. Live
+                happily. Live Long.
+              </p>
+              <button class="visitbtn">
+                <a href="/med">Visit</a><span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/toys.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Toys Store</p>
+              <br />
+              <p class="con1">
+                Fun-loving beginning and happiness for your little one!
+              </p>
+              <button class="visitbtn">
+                <a href="/toys">Visit</a> <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/bakery.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Bakery</p>
+              <br />
+              <p class="con1">
+                The best way to start your day. So why not bake a sweet memory
+                for you!
+              </p>
+              <button class="visitbtn">
+                <a href="/bakery"> Visit</a> <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/clothes2.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Clothing Store</p>
+              <br />
+              <p class="con1">
+                Fashion friendly clothes for fashion enthusiasts.Feel trendy and
+                authentic!
+              </p>
+              <button class="visitbtn">
+                <a href="/clothing"> Visit</a> <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="griditem">
+          <div class="card">
+            <img class="card-img" src="static/images/gro.png" alt="art" />
+            <div class="card-content">
+              <p class="header">Grocery Store</p>
+              <br />
+              <p class="con1">
+                Search no more! Make delicious creations.<br />Shop with us!!!
+              </p>
+              <button class="visitbtn">
+                <a href="/grocery">Visit</a> <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footerpage -->
+
+    <section class="contact" id="contact">
+      <footer>
+        <div class="content">
+          <h2>MallQuest</h2>
+          <p>A place where you can shop all the items unlimited!</p>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright &copy;2022 MallQuest. Designed by
+            <span>Swathi S. Nayak </span>and <span>Vishnu N V</span>
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script type="text/javascript">
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
+
+<!-- #4E95FF
+#64A0EF -->

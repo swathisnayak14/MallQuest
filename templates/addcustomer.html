@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/register.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="imgbox">
+        <img src="static/images/regimg.png" class="regimg" />
+      </div>
+      <div class="contentbox">
+        <div class="formbox">
+          <h2>Customer Details</h2>
+          <form id="register" action="/addcustomer" method="POST" class="input-group" >
+            <div class="container">
+              <label>Customer Name</label>
+              <input
+                type="text"
+                name="Cname"
+                id="Cname"
+                placeholder="Enter the customer name"
+              />
+            </div>
+            <div class="container">
+              <label>Address</label>
+              <input
+                type="text"
+                name="Caddress"
+                id="Caddress"
+                placeholder="Enter the phone number"
+                required
+              />
+            </div>
+            <div class="container">
+              <label>Phone number</label>
+              <input
+                type="text"
+                name="Cphone"
+                id="Cphone"
+                placeholder="Enter the phone number"
+                required
+              />
+            </div>
+            <div class="container">
+              <input type="submit" name="submit" value="Submit" id="submit"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

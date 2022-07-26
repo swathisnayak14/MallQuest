@@ -1,0 +1,16 @@
+{% extends 'layoutform.html' %}
+{% block body %} 
+<h1 class="stname">Med Plus</h1>
+<div class="center">
+    <input type="checkbox" id="show">
+    <div class="buttons">
+        <label for="show" class="show-btn" id="btn" onclick="toggle()"> PURCHASE</label>
+        <label for="" class="show-orders"><a href="/addcustomer">ADD CUSTOMERS</a></label>
+        <label for="" class="show-log"><a href="/logout">Logout</a></label>
+
+    </div>
+    <div class="container1">
+        <label for="show" class="close-btn fa fa-times" onclick="toggle()"></label>
+        <h2>SHOP ITEMS</h2>
+<form id="register" action="/med1" method="POST">
+{% endblock %}

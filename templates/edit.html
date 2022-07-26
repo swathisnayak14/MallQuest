@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/edit.css" />
+</head>
+
+<body >
+  <section>
+    <div class="imgbox">
+      <img src="/static/images/edit.png" class="editimg" />
+    </div>
+    <div class="contentbox">
+      <div class="formbox">
+        <h2>EDIT DETAILS</h2>
+        <form id="register" action="/edit/{{posts.St_id}}" method="POST">
+          <div class="container">
+            <label>Stock ID</label>
+            <input type="text" name="St_id" id="St_id" value="{{posts.St_id}}" placeholder="Enter the shop ID"
+              required />
+          </div>
+          <div class="container">
+            <label>Stock Name</label>
+            <input type="text" name="Stname" id="Stname" value="{{posts.Stname}}" placeholder="Enter the customer ID"
+              required />
+          </div>
+          <div class="container">
+            <label>Stock Amount</label>
+            <input type="text" name="Stamount" id="Stamount" value="{{posts.Stamount}}"
+              placeholder="Enter the product name" required />
+          </div>
+          <div class="container">
+            <label>Stock Barcode</label>
+            <input type="text" name="Stbarcode" id="Stbarcode" value="{{posts.Stbarcode}}" placeholder="Enter the price"
+              required />
+          </div>
+          <div class="container">
+            <label>Shop ID</label>
+            <input type="text" name="Sh_id" id="Sh_id" value="{{posts.Sh_id}}" placeholder="Enter the price" required />
+          </div>
+          <div class="container">
+            <input type="submit" name="submit" value="UPDATE" id="submit"
+              onclick="window.location.href = '/templates/edit.html';" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

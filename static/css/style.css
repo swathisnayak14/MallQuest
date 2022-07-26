@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border-radius: 20px;
+    border: transparent;
+  }
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/back.png);
+    background-position: cover;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section .imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgbox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section .loginimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section .contentbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:100%;
+}
+
+section .contentbox .formbox{
+    width: 50%;
+}
+
+section .contentbox .formbox h2{
+    color: #e41a9a;
+    font-weight:600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: inline-block;
+    letter-spacing: .1rem;
+}
+
+section .contentbox .formbox .container,button{
+    margin-bottom: 2rem;
+}
+
+
+section .contentbox .formbox label,button{
+    margin-bottom: .5rem;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+
+
+
+section .contentbox .formbox .container input,button{
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    font-weight: 500;
+    border: .1rem solid #607d8b;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 3rem;
+}
+
+
+section .contentbox .formbox button[type="submit"]{
+    background:linear-gradient(45deg,#83a8f7,#e41a9a);
+    color: #ffff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+section .contentbox .formbox button[type="submit"]:hover{
+    background:linear-gradient(45deg,#e41a9a,#83a8f7);
+    border: none;
+}
+
+.signup{
+    margin-top:1rem ;
+    color: #607d8b;
+    text-align: center;
+    letter-spacing: .05rem;
+    font-size: 1rem;
+}
+
+.reg{
+    color:#e41a9a;
+    letter-spacing: .05rem;
+}
+
+.reg:hover{
+    color: #232d60;
+}

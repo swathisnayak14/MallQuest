@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+</html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/stationary.css">
+    <title>Stock Logs</title>
+</head>
+<body>
+
+   
+
+    <div class="tablecreate" id="blur">
+      
+
+<table class="table create">
+  <thead>
+    <tr>
+      <th scope="col">Trigger_id</th>
+      <th scope="col">St_id</th>
+      <th scope="col">Stname</th>
+      <th scope="col">Stamount</th>
+      <th scope="col">Stbarcode</th>
+      <th scope="col">Action</th>
+      <th scope="col">Time</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in query %}
+    <tr>
+      <th scope="row">{{post.Triggerid}}</th>
+      <td>{{post.St_id}}</td>
+      <td>{{post.Stname}}</td>
+      <td>{{post.Stamount}}</td>
+      <td>{{post.Stbarcode}}</td>
+      <td>{{post.Action}}</td>
+	  <td>{{post.Time}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+         </div>
+       
+    
+        <script type="text/javascript">
+            function toggle(){
+                var blur=document.getElementById('blur');
+                blur.classList.toggle('active')
+                var btn=document.getElementById('btn');
+                btn.classList.toggle('active')
+            }
+        </script>
+      </body>
+      </html>
+      
